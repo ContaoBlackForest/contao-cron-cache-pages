@@ -1,0 +1,55 @@
+{
+    "name": "contaoblackforest/contao-cron-cache-pages",
+    "description": "Cron cache pages for Contao CMS",
+    "keywords": [
+        "cron",
+        "cache",
+        "pages",
+        "contao"
+    ],
+    "type": "contao-module",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Sven Baumann",
+            "email": "baumann.sv@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Dominik Tomasi",
+            "email": "dominik.tomasi@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "baumann.sv@gmail.com",
+        "issues": "https://github.com/ContaoBlackForest/contao-cron-cache-pages/issues",
+        "source": "https://github.com/ContaoBlackForest/contao-cron-cache-pages"
+    },
+    "require": {
+        "php": ">=5.3.4",
+        "contao/core": ">=3.2,<3.6",
+        "contao-community-alliance/composer-plugin": "~2.0",
+        "contao-community-alliance/dependency-container": "~1.8"
+    },
+    "require-dev": {
+        "phpcq/all-tasks": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ContaoBlackForest\\Cron\\Cache\\Page\\": "src"
+        }
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "contao": "system/modules/cron-cache-pages"
+            }
+        },
+        "branch-alias": {
+            "dev-develop": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
